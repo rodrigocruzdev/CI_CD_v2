@@ -1,0 +1,12 @@
+# The main pipeline for CI_CD_V2
+resources:
+  pipelines:
+    CI_CD_V2_pipeline:
+      name: CI_CD_V2_pipeline
+      target: CI_CD_V2_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: /Workspace/${workspace.file_path}/src
