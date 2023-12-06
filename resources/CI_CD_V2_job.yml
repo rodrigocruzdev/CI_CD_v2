@@ -2,7 +2,7 @@
 resources:
   jobs:
     CI_CD_V2_job:
-      name: CI_CD_V2_job
+      name: CI_CD_V2
 
       schedule:
         quartz_cron_expression: '44 37 8 * * ?'
