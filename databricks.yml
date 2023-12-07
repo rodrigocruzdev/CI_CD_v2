@@ -4,7 +4,7 @@ bundle:
   name: CI_CD_V2
 
 include:
-  - resources/*.yml
+  #- resources/*.yml
 
 targets:
   # The 'dev' target, used for development purposes.
